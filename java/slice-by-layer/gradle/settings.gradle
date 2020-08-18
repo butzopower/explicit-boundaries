@@ -1,0 +1,5 @@
+rootProject.name = 'boundaries'
+
+include 'core'
+include 'adapter'
+include 'delivery'
