@@ -1,0 +1,24 @@
+group 'com.example.catalog'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testImplementation 'com.tngtech.archunit:archunit-junit5:0.14.1'
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+}
+
+application {
+    mainClass = 'com.example.catalog.delivery.CLI'
+}
+
+test {
+    useJUnitPlatform()
+}
