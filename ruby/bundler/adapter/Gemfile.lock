@@ -1,0 +1,23 @@
+PATH
+  remote: ../core
+  specs:
+    core (0.1.0)
+
+PATH
+  remote: .
+  specs:
+    adapter (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adapter!
+  core!
+
+BUNDLED WITH
+   2.1.4
